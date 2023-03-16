@@ -15,26 +15,33 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="personal.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Saimon Professional Portfolio</title>
+    <script defer src="personal.js"></script>
   </head>
   <body id="home">
     <header class="header">
       <div class="home">
         <a href="#home"><span>SA</span></a>
       </div>
-
       <nav>
         <ul class="nav primary-nav">
+          <li class="li burger"><i class="fa-solid fa-bars fa-2x closed"></i><i class="fa-solid fa-x fa-2x opened"></i></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
-    <main class="section">
+    <main class="section page">
       <div class="photo">
-        <img src="assets/IMG_0378.jpeg" alt="personal photo" />
+        <img src="assets/IMG_0418.jpeg" alt="personal photo" />
       </div>
       <div class="about">
         <div class="intro">
@@ -42,11 +49,11 @@
           <h1>Saimon Asghedom.</h1>
           <h3>A bit about me.</h3>
           <p>
-            I am a software engineer with experience in
-            developing high-quality and scalable software applications. I am
-            passionate about leveraging technology to solve complex problems and
-            create innovative solutions. Welcome to my portfolio website, where
-            you can learn more about my skills, experience, and projects.
+            I am a software engineer with experience in developing high-quality
+            and scalable software applications. I am passionate about leveraging
+            technology to solve complex problems and create innovative
+            solutions. Welcome to my portfolio website, where you can learn more
+            about my skills, experience, and projects.
           </p>
         </div>
         <div class="nav secondary-nav">
@@ -56,191 +63,264 @@
         </div>
       </div>
     </main>
-    <section id="projects">
-        <div>
-            <div class="code">
-                <h2>Projects</h2>
-            </div>
-            <div class="column">
-                <div>
-                    <h3>
-                        Project Name 1
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate repellendus maiores cum quia qui eos perspiciatis dicta facilis numquam hic obcaecati explicabo ab et repellat, voluptatibus dolorum sequi ipsa incidunt.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/IMG_0378.jpeg" alt="">
-                </div>
-            </div>
-            <div class="column">
-                <div>
-                    <h3>
-                        Project Name 1
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate repellendus maiores cum quia qui eos perspiciatis dicta facilis numquam hic obcaecati explicabo ab et repellat, voluptatibus dolorum sequi ipsa incidunt.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/IMG_0378.jpeg" alt="">
-                </div>
-            </div>
-            <div class="column">
-                <div>
-                    <h3>
-                        Project Name 1
-                    </h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate repellendus maiores cum quia qui eos perspiciatis dicta facilis numquam hic obcaecati explicabo ab et repellat, voluptatibus dolorum sequi ipsa incidunt.
-                    </p>
-                </div>
-                <div>
-                    <img src="assets/IMG_0378.jpeg" alt="">
-                </div>
-            </div>
+    <section id="projects" class="page">
+      <div>
+        <div class="code">
+          <h2>Projects</h2>
         </div>
+        <div class="column">
+          <div>
+            <h3>Lexical Analyzer & Parser</h3>
+            <p>
+              The project was about implementing a program that takes the source
+              code of a simple language's program as input and breaks it down
+              into lexical tokens. It identifies keywords, identifiers, and
+              operators of the programming language and creates a token for each
+              of them. The parser then takes the tokens generated by the lexical
+              analyzer and analyzes the syntax of the program to create a parse
+              tree. It checks whether the tokens are arranged in a way that
+              conforms to the syntax of the programming language.
+            </p>
+          </div>
+          <div class="img">
+            <img src="assets/code3.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <h3>Pixtoral</h3>
+            <p>
+              Pixtoral is a real-time collaborative platform for drawing and
+              painting, inspired by Reddit's r/place project. The project was
+              developed by a team of four members using React, Express, Node.js,
+              and PostgreSQL, with the goal of creating a fun and interactive
+              platform where users can collaborate with others to create
+              beautiful art. As part of the development team, I was responsible
+              for creating the server-side API using Express and Node.js. The
+              API handled requests from the client and updated the pixel colors
+              in the PostgreSQL database in real-time. I also worked with the
+              team to plan and manage the project using agile development
+              methodologies and collaborated with the team using version control
+              to ensure efficient and effective teamwork.
+            </p>
+          </div>
+          <div class="img">
+            <img src="assets/code2.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <h3>Rental Bulletin Board</h3>
+            <p>
+              The Application is a software system designed for landlords or
+              property managers to advertise their available rental properties
+              to potential tenants. The application provides a console-based
+              platform where landlords can provide information such as the
+              location of the rental property, the rental price, and the contact
+              information of the landlord or property manager. Potential tenants
+              can browse the rental bulletin board to find rental properties
+              that meet their requirements and contact the landlord or property
+              manager directly to schedule a viewing or apply for the rental.
+              The project demonstrates advanced use of polymorphism and
+              inheritance, showcasing proficiency in object-oriented programming
+              design. Additionally, the system utilizes a binary search tree
+              (BST) data structure to efficiently store and retrieve data,
+              ensuring optimal performance and scalability. Furthermore, the
+              project showcases my expertise in developing reliable and robust
+              applications using exception handling and proper documentation
+              practices.
+            </p>
+          </div>
+          <div class="img">
+            <img src="assets/code1.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="resume">
-        <div>
-            <div class="code">
-                <h2>Resume</h2>
-            </div>
-            <div class="column2">
-                <div>
-                    <h3>Work Experience</h3>
-                </div>
-                <div>
-                    <div class="column3">
-                        <div>
-                            <p>2035 - Present</p>
-                        </div>
-                        <div class="work">
-                            <h1>Editor</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni. Laborum itaque magnam voluptatem fugit, error asperiores. Odit expedita eligendi totam, recusandae beatae perferendis et deserunt architecto nemo quibusdam minus.</p>
-                        </div>
-                    </div>
-                    <div class="column3">
-                        <div>
-                            <p>2035 - Present</p>
-                        </div>
-                        <div class="work">
-                            <h1>Editor</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni. Laborum itaque magnam voluptatem fugit, error asperiores. Odit expedita eligendi totam, recusandae beatae perferendis et deserunt architecto nemo quibusdam minus.</p>
-                        </div>
-                    </div>
-                    <div class="column3">
-                        <div>
-                            <p>2035 - Present</p>
-                        </div>
-                        <div class="work">
-                            <h1>Editor</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni. Laborum itaque magnam voluptatem fugit, error asperiores. Odit expedita eligendi totam, recusandae beatae perferendis et deserunt architecto nemo quibusdam minus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column2">
-                <div>
-                    <h3>Education</h3>
-                </div>
-                <div>
-                    <div class="column3">
-                        <div>
-                            <p>2035 - Present</p>
-                        </div>
-                        <div class="work">
-                            <h1>Editor</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni. Laborum itaque magnam voluptatem fugit, error asperiores. Odit expedita eligendi totam, recusandae beatae perferendis et deserunt architecto nemo quibusdam minus.</p>
-                        </div>
-                    </div>
-                    <div class="column3">
-                        <div>
-                            <p>2035 - Present</p>
-                        </div>
-                        <div class="work">
-                            <h1>Editor</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magni. Laborum itaque magnam voluptatem fugit, error asperiores. Odit expedita eligendi totam, recusandae beatae perferendis et deserunt architecto nemo quibusdam minus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column2">
-                <div>
-                    <h3>Skills & Expertise</h3>
-                </div>
-                <div class="work">
-                    <ul>
-                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime pariatur, cum distinctio unde provident fugit doloremque aliquid deserunt dolor eaque quas illo architecto accusamus quis nulla! Nihil at amet inventore?</li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita perferendis consequatur odit necessitatibus nostrum animi, obcaecati vero ullam vitae aut quo deserunt veritatis dignissimos ipsa. Perspiciatis aspernatur temporibus est perferendis?</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolor laborum consectetur itaque, illum sed. Cupiditate consectetur animi dicta fugiat suscipit, quod nostrum voluptatem, nisi quasi excepturi, doloremque ut nihil.</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="resume" class="page">
+      <div>
+        <div class="code code1">
+          <h2>Resume</h2>
         </div>
+        <div class="column2">
+          <div>
+            <h3>
+              <span>Work</span>
+              <span>Experience</span>
+            </h3>
+          </div>
+          <div>
+            <div class="column3">
+              <div>
+                <p>2035 - Present</p>
+              </div>
+              <div class="work">
+                <h1>Editor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, magni. Laborum itaque magnam voluptatem fugit, error
+                  asperiores. Odit expedita eligendi totam, recusandae beatae
+                  perferendis et deserunt architecto nemo quibusdam minus.
+                </p>
+              </div>
+            </div>
+            <div class="column3">
+              <div>
+                <p>2035 - Present</p>
+              </div>
+              <div class="work">
+                <h1>Editor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, magni. Laborum itaque magnam voluptatem fugit, error
+                  asperiores. Odit expedita eligendi totam, recusandae beatae
+                  perferendis et deserunt architecto nemo quibusdam minus.
+                </p>
+              </div>
+            </div>
+            <div class="column3">
+              <div>
+                <p>2035 - Present</p>
+              </div>
+              <div class="work">
+                <h1>Editor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, magni. Laborum itaque magnam voluptatem fugit, error
+                  asperiores. Odit expedita eligendi totam, recusandae beatae
+                  perferendis et deserunt architecto nemo quibusdam minus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column2">
+          <div>
+            <h3>Education</h3>
+          </div>
+          <div>
+            <div class="column3">
+              <div>
+                <p>2035 - Present</p>
+              </div>
+              <div class="work">
+                <h1>Editor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, magni. Laborum itaque magnam voluptatem fugit, error
+                  asperiores. Odit expedita eligendi totam, recusandae beatae
+                  perferendis et deserunt architecto nemo quibusdam minus.
+                </p>
+              </div>
+            </div>
+            <div class="column3">
+              <div>
+                <p>2035 - Present</p>
+              </div>
+              <div class="work">
+                <h1>Editor</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, magni. Laborum itaque magnam voluptatem fugit, error
+                  asperiores. Odit expedita eligendi totam, recusandae beatae
+                  perferendis et deserunt architecto nemo quibusdam minus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column2 skill">
+          <div>
+            <h3>
+              <span>Skills</span>
+              <span>& Experiences</span>
+            </h3>
+          </div>
+          <div class="work">
+            <ul>
+              <li>
+                I'm a paragraph.Click here to add your own text and edit me.
+              </li>
+              <li>
+                I'm a paragraph. Click here to add your own text and edit me.
+              </li>
+              <li>
+                I'm a paragraph. Click here to add your own text and edit me.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contacts">
-        <div class="section">
-            <div class="info">
-                <div>
-                    <h2>Contact</h2>
-                    <p>Looking forward to hearing from you</p>
-                </div>            
-                <div>
-                    <p class="reach">Phone</p>
-                    <p>123-456-7890</p>
-                </div>
-                <div>
-                    <p class="reach">Email</p>
-                    <p>info@mysite.com</p>
-                </div>                
-            </div>
-            
-            <form class="row form">
-                <div class="col-md-6">
-                  <label for="firstname" class="form-label">First Name</label>
-                  <input type="firstname" class="form-control" id="firstname">                    
-                </div>
-                <div class="col-md-6">
-                    <label for="lastname" class="form-label">Last Name</label>
-                    <input type="lastname" class="form-control" id="lastname">
-                </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="col-md-6">
-                  <label for="subject" class="form-label">Subject</label>
-                  <input type="subject" class="form-control" id="subject">
-                </div>
-                <div class="col-md-8 h-50">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <div class="col-4 button">
-                    <button type="submit" class="btn btn-primary ">Submit</button>
-                  </div>
-            </form>    
-        </div>
-    </section>
-    <footer class="footer">
-       <div>
+      <div class="section page section2">
+        <div class="info">
+          <div>
+            <h2>Contact</h2>
+            <p>Looking forward to hearing from you</p>
+          </div>
+          <div>
             <p class="reach">Phone</p>
             <p>123-456-7890</p>
-       </div>
-       <div>
+          </div>
+          <div>
             <p class="reach">Email</p>
             <p>info@mysite.com</p>
-       </div>
-       <div>
-            <p class="reach">Follow Me</p>
-            <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
-            <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-       </div>
-       <div>
-            <small>&copy; 2023 by Saimon Asghedom</small>
-       </div>
+          </div>
+        </div>
+
+        <form class="row form">
+          <div class="col-md-6">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="firstname" class="form-control" id="firstname" />
+          </div>
+          <div class="col-md-6">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="lastname" class="form-control" id="lastname" />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="col-md-6">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="subject" class="form-control" id="subject" />
+          </div>
+          <div class="col-md-8 h-50">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <div class="col-4 button">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer page">
+      <div>
+        <p class="reach">Phone</p>
+        <p>123-456-7890</p>
+      </div>
+      <div class="email">
+        <p class="reach">Email</p>
+        <p>info@mysite.com</p>
+      </div>
+      <div>
+        <p class="reach">Follow Me</p>
+        <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+      </div>
+      <div>
+        <small>&copy; 2023 by Saimon Asghedom</small>
+      </div>
     </footer>
+    <nav class="column4">
+        <ul>
+            <li><a class="mynav" href="#projects">Projects</a></li>
+            <li><a class="mynav" href="#resume">Resume</a></li>
+            <li><a class="mynav" href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="last"></div>
   </body>
 </html>

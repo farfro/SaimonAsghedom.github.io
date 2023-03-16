@@ -54,15 +54,14 @@ a {
     text-decoration: none;
 }
 
-* {
-    outline: 1px solid red;
-}
+
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    background-color: rgb(13,40,72);
 }
 
 .nav {
@@ -94,8 +93,20 @@ a {
     text-align: center;
 }
 
+.primary-nav a:hover {
+    border-bottom: 2px solid rgb(0, 255, 170);
+}
+
 .primary-nav > :not(:first-child) {
     border-left: 1px solid rgb(204,212,247);
+}
+
+.burger {
+    display: none;   
+}
+
+.burger i {
+    color: rgb(0,248,212);
 }
 
 .home{
@@ -114,65 +125,67 @@ a {
     display: block;
     color: rgb(0,248,212);
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-style: bold;
     padding-top: 4px;
     border-radius: 50%;
-    width: 40px;
+    width: 50px;
     border: 2px solid rgb(0,248,212);
 }
 
 .section {
     display: grid;
-    height: 950px;
+    height: 1000px;
     grid-auto-flow: column;
     justify-content: center;
     align-items: center;
+}
+
+.page {
     width: 90%;
     margin: 0px auto;
     border-bottom: 2px solid  rgb(0, 255, 170);
 }
 
 .photo {
-    width: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .about {
-    width: 550px;
-    height: 500px;
+    width: 450px;
+    height: 400px;
 }
 
 .photo img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
 }
 
 .intro span {
     color: rgb(0,248,212);
-    font-size: 20px;
+    font-size: 15px;
     word-spacing: 4px;
 }
 
 .intro h1 {
     font-family: 'Nunito', sans-serif;
-    font-size: 55px;
-    margin-top: 10px;
+    font-size: 40px;
     color: rgb(204,212,247);
 }
 
 .intro h3 {
     font-family: 'Nunito', sans-serif;
-    font-size: 47px;
+    font-size: 30px;
     margin-top: 5px;
     color: rgb(136, 144, 177 );
 }
 
 .intro p {
     font-size: 15px;
-    line-height: 25px;
-    margin-top: 10px;
-    margin-bottom: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
     color: rgb(136, 144, 177 );
 }
@@ -184,27 +197,31 @@ a {
 .secondary-nav {
     display: grid;
     grid-auto-flow: column;
-    height: 150px;
-    justify-items: center;
-    align-items: center;
-    padding-right: 0px;
-    padding-left: 20px;
+    height: 125px;
+    justify-content:space-evenly;
+    margin-left: 20px;
 }
 
 .secondary-nav div {
-   width: 135px;
-   height: 130px;
+   width: 130px;
+   height: 125px;
 }
 
 .secondary-nav a {
     border-radius: 50%;
     text-align: center;
-    height: 125px;
+    height: 120px;
     padding-top: 35%;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     color: rgb(9,23,48);
+}
+
+.secondary-nav a:hover {
+    border: 2px solid rgb(0, 255, 170);
+    background-color: transparent;
+    color: #fff;
 }
 
 .res {
@@ -226,15 +243,8 @@ a {
     column-gap: 40px;
 }
 
-#projects {
-    width: 90%;
-    margin: 0px auto;
-    border-bottom: 2px solid  rgb(0, 255, 170);
-}
-
 .column p {
-    width: 422px;
-    height: 125px;
+    width: 490px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: rgb(136, 144, 177 );
@@ -256,8 +266,6 @@ a {
     color: rgb(204,212,247);
     font-size: 48px;
     letter-spacing: 2px;
-    width: 85%;
-    margin-left: 82px;
 }
 
 .column img {
@@ -265,21 +273,17 @@ a {
     height: 330px;
 }
 
-#resume {
-    width: 90%;
-    margin: 0px auto;
-    border-bottom: 2px solid  rgb(0, 255, 170);
-}
-
 .column2 {
     color: rgb(204,212,247);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     column-gap: 40px;
+    border-bottom: 2px solid  rgb(0, 255, 170);
 }
 
 .column3 {
     display: flex;
+    height: 200px;
     column-gap: 20px;
     width: 500px;
     justify-content: center;
@@ -289,8 +293,51 @@ a {
     flex-basis: 340px;
 }
 
+.column2 h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.column2 {
+    margin: 50px 0px;
+}
+
+.column2 h3 span {
+    display: block;
+}
+
+.skill {
+    border-color: transparent;
+}
+
+.section2 {
+    justify-content: space-between;
+}
+
+.work h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.work p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgb(136, 144, 177 );
+}
+
+.work ul {
+    list-style-type: circle;
+    width: 350px;
+    height: 200px;
+}
+
+.work li {
+    margin-bottom: 5px;
+}
+
 .info {
-    width: 500px;
+    width: 300px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -317,26 +364,35 @@ p.reach {
 }
 
 .form {
-    width: 500px;
     height: 350px;
     margin-left: 10px;
     row-gap: 10px;
     color: rgb(204,212,247);
 }
 
+.form input:focus {
+    border: 2px solid rgb(0,238,255);
+}
+
 
 .form button {
     border-radius: 50%;
-    width: 125px;
-    height: 125px;
+    width: 120px;
+    height: 120px;
     background-color: rgb(0, 255, 170);
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     color:  rgb(9,23,48);
 }
 
+.form button:hover {
+    border: 2px solid  rgb(0, 255, 170);
+    background-color: transparent;
+    color: #fff;
+}
+
 .form div.button {
-    width: 150px;
+    width: 130px;
     height: 125px;
     margin-top: 30px;
 }
@@ -360,3 +416,220 @@ p.reach {
 .footer a + a {
     margin: 10px
 }
+
+@media (max-width: 768px) {
+   
+    .burger {
+        display:inline-block;
+    }
+    .burger ~ li {
+        display: none;
+    }
+
+    .burger :not(:first-child) {
+        display: none;
+    }
+
+    .burger i:hover {
+        cursor: pointer;
+    }
+
+    .column4 {
+        width: 55%;
+        height: 300px;
+        border: 1px solid  rgb(0, 255, 170);
+        border-radius: 5px;
+        background-color: rgb(13,40,72);
+        position:fixed;
+        bottom: 30%;
+        left: 23%;
+        z-index: 100;
+        display: none;
+    }
+
+    .column4 li {
+        text-align: center;
+        margin: 30px 0px;
+    }
+
+    .column4 a {
+        color: rgb(136, 144, 177 );
+        display: inline-block;
+        width: 80px;
+    }
+
+    .column4 a:hover {
+        color: rgb(0, 255, 170);
+    }
+
+    .blur {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        left: 0;
+        z-index: 1;
+        background-color: rgb(9,23,48, 0.5);
+    }
+
+    .section {
+        grid-auto-flow: row;
+        margin-top: 0px;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+    .photo {
+        order: 1;
+    }
+
+    .intro :not(.nav) {
+        margin-left: 0px;
+    }
+
+    .column {
+        flex-direction: column;
+        height: 100%;
+        align-content: center;
+    }
+
+    .code {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .code h2 {
+        font-size: 40px;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    .page {
+        width: 80%;
+    }
+
+    .column > :not(:first-child) {
+        margin-bottom: 20px;
+    }
+
+    .column p {
+        width: 100%;
+    }
+
+    .column > .img {
+        align-self: center;
+        height: 350px;
+    }
+
+    .column img {
+        width: 450px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .column2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column3 {
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+    }
+
+    .code1 {
+        margin-left: 0px;
+    }
+    
+    .column2 > :first-child {
+        width: 100%
+    }
+
+    .column2 h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .work ul {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .info {
+        width: 98%;
+        height: 230px;
+        margin-top: 60px;
+    }
+
+    .section2 {
+        align-content: start;
+    }
+
+    .form {
+        margin-right: 15px;
+        width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+
+    .email {
+        margin-left: 25px;
+    }
+
+    .footer > :first-child {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 414px) {
+    .page {
+        width: 90%;
+    }
+    .about {
+        width: 100%;
+        height: fit-content
+    }
+
+    .photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .photo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .secondary-nav {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .secondary-nav div {
+        width: 90px;
+        height: 90px;
+        margin-left: 15px;
+    }
+
+    .secondary-nav a {
+        height: 90px;
+    }
+   
+}
+
+
