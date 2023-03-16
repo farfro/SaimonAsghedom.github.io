@@ -334,6 +334,7 @@ a {
 
 .work li {
     margin-bottom: 5px;
+    color: rgb(136, 144, 177 );
 }
 
 .info {
@@ -360,7 +361,7 @@ a {
 p.reach {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
-    color: rgb(204,212,247);
+    color:  rgb(204,212,247);
 }
 
 .form {
@@ -404,7 +405,7 @@ p.reach {
 .footer {
     display: flex;
     height: 170px;
-    color: rgb(136, 144, 177 );
+    color: rgb(136, 144, 177);
     justify-content: space-around;
     align-items: center;
 }
@@ -456,6 +457,8 @@ p.reach {
         color: rgb(136, 144, 177 );
         display: inline-block;
         width: 80px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
     }
 
     .column4 a:hover {
