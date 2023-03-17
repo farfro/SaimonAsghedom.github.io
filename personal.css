@@ -5,25 +5,93 @@
 }
 
 /* Remove default margin */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* Set core root defaults */
@@ -31,8 +99,9 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 /* Set core body defaults */
@@ -40,7 +109,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: rgb(9,23,48);
+  background-color: rgb(9, 23, 48);
 }
 
 /* Make images easier to work with */
@@ -51,588 +120,585 @@ picture {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-
 .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    background-color: rgb(13,40,72);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(13, 40, 72);
 }
 
 .nav {
-    display: flex;
-    height: 10vh;
-    align-items: center;
-    padding-right: 20px;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .primary-nav {
-    width: 80vw;
-    justify-content: flex-end;
+  width: 80vw;
+  justify-content: flex-end;
 }
 
 .nav li {
-    flex-basis: 8vw;
+  flex-basis: 8vw;
 }
 
 .nav a {
-    color: rgb(136, 144, 177 );
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    letter-spacing: .5px;
-    display: block;
+  color: rgb(194, 198, 213);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: block;
 }
 
 .primary-nav a {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .primary-nav a:hover {
-    border-bottom: 2px solid rgb(0, 255, 170);
+  border-bottom: 2px solid rgb(0, 255, 170);
 }
 
 .primary-nav > :not(:first-child) {
-    border-left: 1px solid rgb(204,212,247);
+  border-left: 1px solid rgb(204, 212, 247);
 }
 
 .burger {
-    display: none;   
+  display: none;
 }
 
 .burger i {
-    color: rgb(0,248,212);
+  color: rgb(0, 248, 212);
 }
 
-.home{
-    display: flex;
-    width: 20vw;
-    justify-content: center;
-    align-items: center;
+.home {
+  display: flex;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .home a {
-    text-align: center;
-    margin-right: 12px;
+  text-align: center;
+  margin-right: 12px;
 }
 
 .home span {
-    display: block;
-    color: rgb(0,248,212);
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    font-style: bold;
-    padding-top: 4px;
-    border-radius: 50%;
-    width: 50px;
-    border: 2px solid rgb(0,248,212);
+  display: block;
+  color: rgb(0, 248, 212);
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-style: bold;
+  padding-top: 4px;
+  border-radius: 50%;
+  width: 50px;
+  border: 2px solid rgb(0, 248, 212);
 }
 
 .section {
-    display: grid;
-    height: 1000px;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  height: 1000px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page {
-    width: 90%;
-    margin: 0px auto;
-    border-bottom: 2px solid  rgb(0, 255, 170);
+  width: 90%;
+  margin: 0px auto;
+  border-bottom: 2px solid rgb(0, 255, 170);
 }
 
 .photo {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 .about {
-    width: 450px;
-    height: 400px;
+  width: 450px;
+  height: 400px;
 }
 
 .photo img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 
 .intro span {
-    color: rgb(0,248,212);
-    font-size: 15px;
-    word-spacing: 4px;
+  color: rgb(0, 248, 212);
+  font-size: 16px;
+  word-spacing: 4px;
 }
 
 .intro h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 40px;
-    color: rgb(204,212,247);
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  color: rgb(204, 212, 247);
 }
 
-.intro h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    margin-top: 5px;
-    color: rgb(136, 144, 177 );
+.intro h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  margin-top: 5px;
+  color: rgb(194, 198, 213);
 }
 
 .intro p {
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(136, 144, 177 );
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(194, 198, 213);
 }
 
 .intro :not(.nav) {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .secondary-nav {
-    display: grid;
-    grid-auto-flow: column;
-    height: 125px;
-    justify-content:space-evenly;
-    margin-left: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  height: 125px;
+  justify-content: space-evenly;
+  margin-left: 20px;
 }
 
 .secondary-nav div {
-   width: 130px;
-   height: 125px;
+  width: 130px;
+  height: 125px;
 }
 
 .secondary-nav a {
-    border-radius: 50%;
-    text-align: center;
-    height: 120px;
-    padding-top: 35%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: rgb(9,23,48);
+  border-radius: 50%;
+  text-align: center;
+  height: 120px;
+  padding-top: 35%;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgb(9, 23, 48);
 }
 
 .secondary-nav a:hover {
-    border: 2px solid rgb(0, 255, 170);
-    background-color: transparent;
-    color: #fff;
+  border: 2px solid rgb(0, 255, 170);
+  background-color: transparent;
+  color: #fff;
 }
 
 .res {
-    background-color: rgb(0, 255, 170);
+  background-color: rgb(0, 255, 170);
 }
 
 .proj {
-    background-color: rgb(0,238,255);
+  background-color: rgb(0, 238, 255);
 }
 
 .cont {
-    background-color: rgb(249,162,0);
+  background-color: rgb(249, 162, 0);
 }
 
 .column {
-    display: flex;
-    height: 450px;
-    justify-content: center;
-    column-gap: 40px;
+  display: flex;
+  height: 450px;
+  justify-content: center;
+  column-gap: 40px;
 }
 
 .column p {
-    width: 490px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgb(136, 144, 177 );
+  width: 490px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(194, 198, 213);
 }
 
 .column h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: rgb(204,212,247);
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgb(204, 212, 247);
 }
 
 .code {
-    height: 280px;
-    display: grid;
-    align-content: center;
+  height: 280px;
+  display: grid;
+  align-content: center;
 }
 
 .code h2 {
-    color: rgb(204,212,247);
-    font-size: 48px;
-    letter-spacing: 2px;
+  color: rgb(204, 212, 247);
+  font-size: 48px;
+  letter-spacing: 2px;
 }
 
 .column img {
-    width: 491px;
-    height: 330px;
+  width: 491px;
+  height: 330px;
 }
 
 .column2 {
-    color: rgb(204,212,247);
-    display: flex;
-    justify-content: space-between;
-    column-gap: 40px;
-    border-bottom: 2px solid  rgb(0, 255, 170);
+  color: rgb(204, 212, 247);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  border-bottom: 2px solid rgb(0, 255, 170);
 }
 
 .column3 {
-    display: flex;
-    height: 200px;
-    column-gap: 20px;
-    width: 500px;
-    justify-content: center;
+  display: flex;
+  height: 200px;
+  column-gap: 20px;
+  width: 500px;
+  justify-content: center;
 }
 
 .work {
-    flex-basis: 340px;
+  flex-basis: 340px;
 }
 
+.column2 h2,
 .column2 h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
 }
 
 .column2 {
-    margin: 50px 0px;
+  margin: 50px 0px;
 }
 
+.column2 h2 span,
 .column2 h3 span {
-    display: block;
+  display: block;
 }
 
 .skill {
-    border-color: transparent;
+  border-color: transparent;
 }
 
 .section2 {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .work h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    margin-bottom: 5px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .work p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgb(136, 144, 177 );
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(194, 198, 213);
 }
 
 .work ul {
-    list-style-type: circle;
-    width: 350px;
-    height: 200px;
+  list-style-type: circle;
+  width: 350px;
+  height: 200px;
 }
 
 .work li {
-    margin-bottom: 5px;
-    color: rgb(136, 144, 177 );
+  margin-bottom: 5px;
+  color: rgb(194, 198, 213);
+  font-size: 16px;
 }
 
 .info {
-    width: 300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .info h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: rgb(204,212,247);
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(204, 212, 247);
 }
 
 .info p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: rgb(136, 144, 177 );
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(194, 198, 213);
 }
 
 p.reach {
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    color:  rgb(204,212,247);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: rgb(204, 212, 247);
 }
 
 .form {
-    height: 350px;
-    margin-left: 10px;
-    row-gap: 10px;
-    color: rgb(204,212,247);
+  height: 350px;
+  margin-left: 10px;
+  row-gap: 10px;
+  color: rgb(204, 212, 247);
 }
 
 .form input:focus {
-    border: 2px solid rgb(0,238,255);
+  border: 2px solid rgb(0, 238, 255);
 }
 
-
 .form button {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    background-color: rgb(0, 255, 170);
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    color:  rgb(9,23,48);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(0, 255, 170);
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: rgb(9, 23, 48);
 }
 
 .form button:hover {
-    border: 2px solid  rgb(0, 255, 170);
-    background-color: transparent;
-    color: #fff;
+  border: 2px solid rgb(0, 255, 170);
+  background-color: transparent;
+  color: #fff;
 }
 
 .form div.button {
-    width: 130px;
-    height: 125px;
-    margin-top: 30px;
+  width: 130px;
+  height: 125px;
+  margin-top: 30px;
 }
 
 #message {
-    height: 125px;
+  height: 125px;
 }
 
 .footer {
-    display: flex;
-    height: 170px;
-    color: rgb(136, 144, 177);
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  height: 170px;
+  color: rgb(194, 198, 213);
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-color: transparent;
 }
 
 .footer div > p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer a + a {
-    margin: 10px
+  margin: 10px;
+}
+
+.column4 {
+  width: 55%;
+  height: 300px;
+  border: 1px solid rgb(0, 255, 170);
+  border-radius: 5px;
+  background-color: rgb(13, 40, 72);
+  position: fixed;
+  bottom: 30%;
+  left: 23%;
+  z-index: 100;
+  display: none;
 }
 
 @media (max-width: 768px) {
-   
-    .burger {
-        display:inline-block;
-    }
-    .burger ~ li {
-        display: none;
-    }
+  .burger {
+    display: inline-block;
+  }
+  .burger ~ li {
+    display: none;
+  }
 
-    .burger :not(:first-child) {
-        display: none;
-    }
+  .burger :not(:first-child) {
+    display: none;
+  }
 
-    .burger i:hover {
-        cursor: pointer;
-    }
+  .burger i:hover {
+    cursor: pointer;
+  }
 
-    .column4 {
-        width: 55%;
-        height: 300px;
-        border: 1px solid  rgb(0, 255, 170);
-        border-radius: 5px;
-        background-color: rgb(13,40,72);
-        position:fixed;
-        bottom: 30%;
-        left: 23%;
-        z-index: 100;
-        display: none;
-    }
+  .column4 li {
+    text-align: center;
+    margin: 30px 0px;
+  }
 
-    .column4 li {
-        text-align: center;
-        margin: 30px 0px;
-    }
+  .column4 a {
+    color: rgb(194, 198, 213);
+    display: inline-block;
+    width: 80px;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+  }
 
-    .column4 a {
-        color: rgb(136, 144, 177 );
-        display: inline-block;
-        width: 80px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 18px;
-    }
+  .column4 a:hover {
+    color: rgb(0, 255, 170);
+  }
 
-    .column4 a:hover {
-        color: rgb(0, 255, 170);
-    }
+  .blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(9, 23, 48, 0.5);
+  }
 
-    .blur {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 10%;
-        left: 0;
-        z-index: 1;
-        background-color: rgb(9,23,48, 0.5);
-    }
+  .section {
+    grid-auto-flow: row;
+    margin-top: 0px;
+    align-content: center;
+    justify-items: center;
+  }
 
-    .section {
-        grid-auto-flow: row;
-        margin-top: 0px;
-        align-content: center;
-        justify-items: center;
-    }
+  .about {
+    width: 90%;
+  }
+  .photo {
+    order: 1;
+  }
 
-    .about {
-        width: 90%;
-    }
-    .photo {
-        order: 1;
-    }
+  .intro :not(.nav) {
+    margin-left: 0px;
+  }
 
-    .intro :not(.nav) {
-        margin-left: 0px;
-    }
+  .column {
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+  }
 
-    .column {
-        flex-direction: column;
-        height: 100%;
-        align-content: center;
-    }
+  .code {
+    height: 150px;
+    margin-top: 50px;
+  }
 
-    .code {
-        height: 150px;
-        margin-top: 50px;
-    }
+  .code h2 {
+    font-size: 40px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 
-    .code h2 {
-        font-size: 40px;
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 50px;
-    }
+  .page {
+    width: 80%;
+  }
 
-    .page {
-        width: 80%;
-    }
+  .column > :not(:first-child) {
+    margin-bottom: 20px;
+  }
 
-    .column > :not(:first-child) {
-        margin-bottom: 20px;
-    }
+  .column p {
+    width: 100%;
+  }
 
-    .column p {
-        width: 100%;
-    }
+  .column > .img {
+    align-self: center;
+    height: 350px;
+  }
 
-    .column > .img {
-        align-self: center;
-        height: 350px;
-    }
+  .column img {
+    width: 450px;
+    height: 300px;
+    margin-top: 20px;
+  }
 
-    .column img {
-        width: 450px;
-        height: 300px;
-        margin-top: 20px;
-    }
+  .column2 {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .column2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .column3 {
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-    }
+  .column3 {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
 
-    .code1 {
-        margin-left: 0px;
-    }
-    
-    .column2 > :first-child {
-        width: 100%
-    }
+  .code1 {
+    margin-left: 0px;
+  }
 
-    .column2 h3 {
-        font-size: 25px;
-        margin-bottom: 30px;
-    }
+  .column2 > :first-child {
+    width: 100%;
+  }
 
-    .work {
-        width: 100%;
-    }
+  .column2 h2,
+  .column2 h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
 
-    .work ul {
-        width: 80%;
-        margin-left: 20px;
-    }
+  .work {
+    width: 100%;
+  }
 
-    .info {
-        width: 98%;
-        height: 230px;
-        margin-top: 60px;
-    }
+  .work ul {
+    width: 80%;
+    margin-left: 20px;
+  }
 
-    .section2 {
-        align-content: start;
-    }
+  .info {
+    width: 98%;
+    height: 230px;
+    margin-top: 60px;
+  }
 
-    .form {
-        margin-right: 15px;
-        width: 100%;
-    }
+  .section2 {
+    align-content: start;
+  }
 
-    .footer {
-        height: auto;
-        flex-direction: column;
-        row-gap: 25px;
-        align-items: center;
-    }
+  .form {
+    margin-right: 15px;
+    width: 100%;
+  }
 
-    .email {
-        margin-left: 25px;
-    }
+  .footer {
+    height: auto;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+  }
 
-    .footer > :first-child {
-        margin-top: 20px;
-    }
+  .email {
+    margin-left: 25px;
+  }
 
+  .footer > :first-child {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 414px) {
-    .page {
-        width: 90%;
-    }
-    .about {
-        width: 100%;
-        height: fit-content
-    }
+  .page {
+    width: 90%;
+  }
+  .about {
+    width: 100%;
+    height: fit-content;
+  }
 
-    .photo {
-        width: 300px;
-        height: 300px;
-    }
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
 
-    .photo img {
-        width: 300px;
-        height: 300px;
-    }
+  .photo img {
+    width: 300px;
+    height: 300px;
+  }
 
-    .secondary-nav {
-        width: 100%;
-        margin-left: 0px;
-    }
+  .secondary-nav {
+    width: 100%;
+    margin-left: 0px;
+  }
 
-    .secondary-nav div {
-        width: 90px;
-        height: 90px;
-        margin-left: 15px;
-    }
+  .secondary-nav div {
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+  }
 
-    .secondary-nav a {
-        height: 90px;
-    }
-   
+  .secondary-nav a {
+    height: 90px;
+  }
 }
-
-
